@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <label for="iname">CARDHOLDER NAME</label>
+                <input type="text" name="name" id="iname" required placeholder="e.g. Jane appleseed">
+
+                <label for="icardnumber">CARD NUMBER</label>
+                <input type="number" name="cardnumber" id="icardnumber" required placeholder="e.g. 1234 5678 9123 0000">
+
+                <div class="inputs-wrapper">
+                    <div class="input-container">
+                        <label for="imes">EXP.DATE</label>
+                        <input type="number" name="mes" id="imes" placeholder="MM">
+                    </div>
+
+                    <div class="input-container">
+                        <label for="iano">(MM/YY)</label>
+                        <input type="number" name="ano" id="iano" placeholder="YY">
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="icvc">CVC</label>
+                        <input type="number" name="cvc" id="icvc" placeholder="e.g. 123">
+                    </div>
+                </div>
+
+                <input type="submit" onclick="finalizar()">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
