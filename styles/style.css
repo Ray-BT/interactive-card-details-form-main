@@ -18,7 +18,12 @@ body {
     padding: 0;
 }
 
-#img {
+.container {
+    width: 100%;
+}
+
+#imgcontainer {
+    position: relative;
     display: flex;
     background: no-repeat;
     background-size: cover;
@@ -28,7 +33,7 @@ body {
     width: 100%;
 }
 
-#imgcard {
+#imgfrontcard {
     position: absolute;
     background: no-repeat;
     background-size: contain;
@@ -40,6 +45,14 @@ body {
     align-self: end;
     width: 300px;
     z-index: 2;
+}
+
+.baixoDireita {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    top: 230px;
+    left: 35px;
+    z-index: 3;
 }
 
 #imgbackcard {
