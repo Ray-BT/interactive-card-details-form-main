@@ -28,7 +28,7 @@ body {
 
 #imgcard {
     position: absolute;
-    background: url("/images/bg-card-front.png") no-repeat;
+    background: no-repeat;
     background-size: contain;
     background-position: right;
     top: 130px;
