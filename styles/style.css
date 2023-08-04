@@ -18,7 +18,7 @@ body {
 
 #img {
     display: flex;
-    background: url(/images/bg-main-mobile.png) no-repeat;
+    background: url("/images/bg-main-mobile.png") no-repeat;
     background-size: cover;
     height: 240px;
     
@@ -28,7 +28,7 @@ body {
 
 #imgcard {
     position: absolute;
-    background: url(/images/bg-card-front.png) no-repeat;
+    background: url("/images/bg-card-front.png") no-repeat;
     background-size: contain;
     background-position: right;
     top: 130px;
@@ -41,7 +41,7 @@ body {
 
 #imgbackcard {
     position: absolute;
-    background: url(/images/bg-card-back.png) no-repeat;
+    background: url("/images/bg-card-back.png") no-repeat;
     background-size: contain;
     height: 150px;
     top: 45px;
