@@ -47,13 +47,63 @@ body {
     z-index: 2;
 }
 
-.baixoDireita {
+/*⇩⇩⇩DETALHES DO CARTAO⇩⇩⇩*/
+.numerocartao {
     position: absolute;
     color: rgb(250, 250, 250);
-    top: 230px;
+    top: 220px;
     left: 35px;
     z-index: 3;
 }
+
+.nomepessoa {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    top: 245px;
+    left: 35px;
+    z-index: 3;
+}
+
+.bola1 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 145px;
+    left: 35px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    z-index: 3;
+}
+
+.bola2 {
+    position: absolute;
+    top: 155px;
+    left: 78px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+}
+
+.mesdata {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    top: 245px;
+    left: 255px;
+    font-size: 0.5;
+    z-index: 3;
+}
+
+.codigocvc {
+    position: absolute;
+    color: rgb(250, 250, 250);
+    top: 110px;
+    left: 320px;
+    font-size: 0.5;
+    z-index: 3;
+}
+/*⇧⇧⇧DETALHES DO CARTAO⇧⇧⇧*/
 
 #imgbackcard {
     position: absolute;
@@ -82,10 +132,16 @@ section {
     transform: translateX(-50%);
 }
 
-#iname, #icardnumber {
+#icardname, #icardnumber {
     width: 100%;
     padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.317);
     box-sizing: border-box;
+}
+
+#icardname {
+    margin-bottom: 10px;
 }
 
 label {
@@ -96,6 +152,7 @@ label {
 .inputs-wrapper {
     display: flex;
     justify-content: start;
+    margin-top: 10px;
     width: 100%;
     height: 50px;
 }
@@ -116,7 +173,9 @@ label {
 
 #imes , #iano , #icvc {
     margin: 0px 30px 10px 10px;
+    border-radius: 7px;
     padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.317);
     box-sizing: border-box;
 }
 
@@ -126,6 +185,7 @@ label {
     padding: 10px;
     color: white;
     background-color: hsl(278, 68%, 11%);
-    border-radius: 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(0, 0, 0);
     box-sizing: border-box;
 }
