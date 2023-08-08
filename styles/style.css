@@ -171,8 +171,6 @@ label {
     width: 100px;
 }
 
-
-
 #imes , #iano , #icvc {
     margin: 0px 30px 10px 10px;
     border-radius: 7px;
@@ -190,4 +188,11 @@ label {
     border-radius: 7px;
     border: 1px solid rgb(0, 0, 0);
     box-sizing: border-box;
+}
+
+.span-required {
+    font-size: 0.6em;
+    display: none;
+    color: #e63636;
+    
 }
