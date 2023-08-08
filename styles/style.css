@@ -190,9 +190,3 @@ label {
     box-sizing: border-box;
 }
 
-.span-required {
-    font-size: 0.6em;
-    display: none;
-    color: #e63636;
-    
-}
