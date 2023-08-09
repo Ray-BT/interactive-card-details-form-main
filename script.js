@@ -47,27 +47,27 @@ function icvcValidate() {
 }
 
 function updateCardInfo() {
-    // Atualizar o nome do titular do cartão
-    var cardNameInput = document.getElementById("icardname");
-    var nomePessoaDiv = document.querySelector(".nomepessoa");
+    // Atualizar o nome do titular do cartão        
+    var cardNameInput         = document.getElementById("icardname");
+    var nomePessoaDiv         = document.querySelector(".nomepessoa");
     nomePessoaDiv.textContent = cardNameInput.value;
   
     // Atualizar o número do cartão (formatado como número de cartão de crédito)
-    var cardNumberInput = document.getElementById("icardnumber");
-    var numeroCartaoDiv = document.querySelector(".numerocartao");
-    var cardNumberValue = cardNumberInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-    var formattedCardNumber = formatCardNumber(cardNumberValue);
+    var cardNumberInput         = document.getElementById("icardnumber");
+    var numeroCartaoDiv         = document.querySelector(".numerocartao");
+    var cardNumberValue         = cardNumberInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+    var formattedCardNumber     = formatCardNumber(cardNumberValue);
     numeroCartaoDiv.textContent = formattedCardNumber;
   
     // Atualizar a data de expiração
-    var mesInput = document.getElementById("imes");
-    var anoInput = document.getElementById("iano");
-    var mesDataDiv = document.querySelector(".mesdata");
+    var mesInput           = document.getElementById("imes");
+    var anoInput           = document.getElementById("iano");
+    var mesDataDiv         = document.querySelector(".mesdata");
     mesDataDiv.textContent = mesInput.value + "/" + anoInput.value;
   
     // Atualizar o código CVC
-    var cvcInput = document.getElementById("icvc");
-    var codigoCvcDiv = document.querySelector(".codigocvc");
+    var cvcInput             = document.getElementById("icvc");
+    var codigoCvcDiv         = document.querySelector(".codigocvc");
     codigoCvcDiv.textContent = cvcInput.value;
   }
   
@@ -78,3 +78,17 @@ function updateCardInfo() {
   
   // Chamado toda vez que o conteúdo dos campos de entrada é alterado
   document.addEventListener("input", updateCardInfo);
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("iform");
+    const formCheck = document.getElementById("iformcheck");
+    const submitButton = document.getElementById("isubmit");
+  
+    submitButton.addEventListener("click", function(event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      form.style.display = "none";
+      formCheck.style.display = "grid";
+    });
+  });
+
+  
