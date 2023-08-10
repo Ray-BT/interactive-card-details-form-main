@@ -1,0 +1,113 @@
+/*
+@media screen and (min-width: 1024px) {
+
+    #imgcontainer {
+        background-image: url(../images/bg-main-desktop.png);
+        position: relative;
+        display: flex;
+        background: no-repeat;
+        background-size: cover;
+        height: 240px;
+        
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    #imgfrontcard {
+        position: absolute;
+        background: no-repeat;
+        background-size: contain;
+        background-position: right;
+        top: 130px;
+        left: 20px;
+        height: 150px;
+        border-radius: 5px;
+        align-self: end;
+        width: 300px;
+        z-index: 2;
+    }
+    
+    #imgbackcard {
+        position: absolute;
+        background: no-repeat;
+        background-size: contain;
+        height: 150px;
+        top: 45px;
+        right: 25px;
+        background-position: right;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    
+    /*⇩⇩⇩DETALHES DO CARTAO⇩⇩⇩*/
+    .numerocartao {
+        position: absolute;
+        color: rgb(250, 250, 250);
+        font-size: 1.5em;
+        font-weight: 100;
+        top: 205px;
+        left: 35px;
+        z-index: 3;
+    }
+ /*   
+    .nomepessoa {
+        position: absolute;
+        color: rgb(250, 250, 250);
+        top: 245px;
+        left: 35px;
+        z-index: 3;
+    }
+    
+    .bola1 {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 145px;
+        left: 35px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        z-index: 3;
+    }
+    
+    .bola2 {
+        position: absolute;
+        top: 155px;
+        left: 78px;
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 15px;
+        height: 15px;
+        z-index: 3;
+    }
+    
+    .mesdata {
+        position: absolute;
+        color: rgb(250, 250, 250);
+        top: 245px;
+        left: 255px;
+        font-size: 0.5;
+        z-index: 3;
+    }
+    
+    .codigocvc {
+        position: absolute;
+        color: rgb(250, 250, 250);
+        top: 110px;
+        left: 318px;
+        font-size: 0.5;
+        z-index: 3;
+    }
+    /*⇧⇧⇧DETALHES DO CARTAO⇧⇧⇧*/
+    /*
+    section {
+        position: absolute;
+        text-align: start;
+        width: 1400px;
+        height: 900px;
+        min-height: 700px;
+        background-color: white;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
